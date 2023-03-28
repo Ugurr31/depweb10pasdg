@@ -1,4 +1,3 @@
-
 /*
     THIS FILE WAS DEVELOPED BY MEHMET GUDUK
     © 2022 COPYRIGHT, LICENSED WITH GPL-3.0 LICENSE, AUTHOR IS MEHMET GUDUK
@@ -6,12 +5,12 @@
 */
 
 const city_list = [
-    { name: "Türkiye Geneli", population: , lucky: 5304220, ratio: 15 },
-    { name: "Adana", population: , lucky: 163817, ratio: 13 },
-    { name: "Adıyaman", population:, lucky: 17073, ratio: 37 },
-    { name: "Afyonkarahisar", population: , lucky: 16362, ratio: 45 },
-    { name: "Ağrı", population: , lucky: 4309, ratio: 124 },
-    { name: "Aksaray", population: , lucky: 13444, ratio: 31 },
+    { name: "Türkiye Geneli", population: 83614362, lucky: 5304220, ratio: 15 },
+    { name: "Adana", population: 2258718, lucky: 163817, ratio: 13 },
+    { name: "Adıyaman", population: 632459, lucky: 17073, ratio: 37 },
+    { name: "Afyonkarahisar", population: 736912, lucky: 16362, ratio: 45 },
+    { name: "Ağrı", population: 535435, lucky: 4309, ratio: 124 },
+    { name: "Aksaray", population: 423011, lucky: 13444, ratio: 31 },
     { name: "Amasya", population: 335494, lucky: 335494, ratio: 46 },
     { name: "Ankara", population: 5663322, lucky: 702067, ratio: 8 },
     { name: "Antalya", population: 2548308, lucky: 233815, ratio: 10 },
