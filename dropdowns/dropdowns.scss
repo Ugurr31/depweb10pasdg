@@ -1,0 +1,243 @@
+/*
+    THIS FILE WAS DEVELOPED BY MEHMET GUDUK
+    © 2022 COPYRIGHT, LICENSED WITH GPL-3.0 LICENSE, AUTHOR IS MEHMET GUDUK
+    https://github.com/mehmetguduk
+*/
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%% STYLES %%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+section#dropdowns {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img.clouds {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.2;
+        transform: scaleX(-1);
+    }
+
+    div.dropdowns-container {
+        display: flex;
+        flex-direction: column;
+        margin: 200px;
+
+        div.country-container,
+        div.city-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            div.dropdown-message-country,
+            div.dropdown-message-city {
+                display: inline;
+                width: 470px;
+                background-color: var(--white1);
+                text-align: center;
+                color: var(--blue1);
+                border-radius: 5px;
+                font-size: 30px;
+                font-weight: 600;
+                padding: 10px 0;
+                cursor: pointer;
+                -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+                -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+                box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+
+                i.fa-caret-down {
+                    font-size: 20px;
+                }
+            }
+            div.dropdown-country,
+            div.dropdown-city {
+                display: none;
+                position: absolute;
+                top: 50px;
+                width: 470px;
+                background-color: var(--white2);
+                text-align: center;
+                font-size: 18px;
+                z-index: 1;
+
+                ul.country-list,
+                ul.city-list {
+                    border-radius: 0 0 5px 5px;
+                    max-height: 200px;
+                    overflow: scroll;
+                    overflow-x: hidden;
+                    list-style-type: none;
+
+                    li.country,
+                    li.city {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+                        color: var(--gray1);
+                        transition: background-color 0.1s, color 0.1s;
+                        padding: 3px 0;
+                        font-weight: 500;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: var(--blue1);
+                            color: var(--white1);
+                        }
+
+                        &:active {
+                            background-color: var(--gray1);
+                            color: var(--white1);
+                        }
+                    }
+                }
+            }
+
+            /* @@@@@@@@@@@@@@@@ COUNTRY CONTAINER @@@@@@@@@@@@@@@@ */
+            div.download {
+                margin: 30px 0;
+                text-align: center;
+
+                div.download-header {
+                    color: var(--red1);
+                    font-size: 40px;
+                    font-weight: 600;
+                }
+                div.download-speed {
+                    color: var(--blue1);
+                    font-size: 40px;
+                    font-weight: 500;
+                }
+            }
+
+            /* @@@@@@@@@@@@@@@@ CITY CONTAINER @@@@@@@@@@@@@@@@ */
+            div.card-container {
+                margin: 30px 0;
+                text-align: center;
+
+                div.card {
+                    margin: 10px 20px;
+
+                    h5.card-header {
+                        font-size: 22px;
+                        color: var(--red1);
+                        font-weight: 700;
+                    }
+                    span.card-info {
+                        font-size: 20px;
+                        color: var(--blue1);
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%% RESPONSIVE %%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@media screen and (max-width: 800px) {
+    section#dropdowns {
+        div.dropdown-message-country,
+        div.dropdown-message-city {
+            font-size: 26px !important;
+        }
+        div.download-header,
+        div.download-speed {
+            font-size: 34px !important;
+        }
+        h5.card-header {
+            font-size: 20px !important;
+        }
+        span.card-info {
+            font-size: 18px !important;
+        }
+        div.dropdown-country,
+        div.dropdown-city {
+            top: 45px !important;
+        }
+
+        div.dropdowns-container {
+            margin: 150px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section#dropdowns {
+        div.dropdown-message-country,
+        div.dropdown-message-city {
+            font-size: 22px !important;
+            width: 350px !important;
+        }
+        div.download-header,
+        div.download-speed {
+            font-size: 30px !important;
+        }
+        div.dropdown-country,
+        div.dropdown-city {
+            top: 40px !important;
+            width: 350px !important;
+        }
+        div.dropdowns-container {
+            margin: 100px !important;
+        }
+        h5.card-header {
+            font-size: 18px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section#dropdowns {
+        div.dropdown-message-country,
+        div.dropdown-message-city {
+            width: 250px !important;
+        }
+        div.dropdown-country,
+        div.dropdown-city {
+            width: 250px !important;
+        }
+        div.dropdowns-container {
+            margin: 100px 20px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    section#dropdowns {
+        div.dropdown-message-country,
+        div.dropdown-message-city {
+            font-size: 20px !important;
+            width: 100% !important;
+            border-radius: 0 !important;
+        }
+        div.dropdown-country,
+        div.dropdown-city {
+            width: 100% !important;
+
+            ul.city-list,
+            ul.country-list {
+                border-radius: 0 !important;
+            }
+        }
+        div.download-header,
+        div.download-speed {
+            font-size: 26px !important;
+            word-wrap: break-word !important;
+        }
+
+        h5.card-header {
+            word-wrap: break-word !important;
+        }
+        span.card-info {
+            word-wrap: break-word !important;
+        }
+
+        div.dropdowns-container {
+            margin: 100px 0 !important;
+        }
+    }
+}

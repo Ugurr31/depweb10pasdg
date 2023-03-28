@@ -1,0 +1,184 @@
+/*
+    THIS FILE WAS DEVELOPED BY MEHMET GUDUK
+    © 2022 COPYRIGHT, LICENSED WITH GPL-3.0 LICENSE, AUTHOR IS MEHMET GUDUK
+    https://github.com/mehmetguduk
+*/
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%% STYLES %%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+header#welcome {
+    position: relative;
+    height: 100vh;
+
+    img.clouds {
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        object-fit: cover;
+    }
+
+    div.welcome-container {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        width: 100%;
+        text-align: center;
+
+        h1.main-title {
+            color: var(--red1);
+            font-size: 80px;
+            padding: 0 40px;
+        }
+        h2.sub-title {
+            color: var(--blue1);
+            font-size: 50px;
+            padding: 0 40px;
+        }
+        h3.hashtag {
+            a {
+                color: var(--red1);
+                font-size: 30px;
+                transition: color 0.2s;
+
+                :visited {
+                    color: var(--red1);
+                }
+
+                &:hover {
+                    color: var(--blue1);
+                }
+
+                span {
+                    color: var(--blue1);
+                }
+            }
+            i.cursor-pointer {
+                font-size: 30px;
+                color: var(--blue1);
+            }
+        }
+    }
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%% RESPONSIVE %%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@media screen and (max-width: 1400px) {
+    header#welcome {
+        h1.main-title {
+            font-size: 70px !important;
+        }
+        h2.sub-title {
+            font-size: 45px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    header#welcome {
+        h1.main-title {
+            font-size: 60px !important;
+        }
+        h2.sub-title {
+            font-size: 40px !important;
+        }
+        h3.hashtag {
+            a {
+                font-size: 24px !important;
+            }
+            i.cursor-pointer {
+                font-size: 24px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header#welcome {
+        h1.main-title {
+            font-size: 45px !important;
+        }
+        h2.sub-title {
+            font-size: 30px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header#welcome {
+        h1.main-title {
+            font-size: 40px !important;
+            padding: 0 20px !important;
+        }
+        h2.sub-title {
+            font-size: 25px !important;
+            padding: 0 20px !important;
+        }
+        h3.hashtag {
+            a {
+                font-size: 18px !important;
+            }
+            i.cursor-pointer {
+                font-size: 18px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    header#welcome {
+        h1.main-title {
+            font-size: 25px !important;
+            padding: 0 5px !important;
+        }
+        h2.sub-title {
+            font-size: 18px !important;
+            padding: 0 5px !important;
+        }
+        h3.hashtag {
+            a {
+                font-size: 16px !important;
+                word-wrap: break-word;
+            }
+            i.cursor-pointer {
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 200px) {
+    header#welcome {
+        h1.main-title {
+            font-size: 25px !important;
+            padding: 0 5px !important;
+            word-wrap: break-word;
+        }
+        h2.sub-title {
+            font-size: 18px !important;
+            padding: 0 5px !important;
+            word-wrap: break-word;
+        }
+
+        h3.hashtag {
+            a {
+                font-size: 12px !important;
+            }
+            i.cursor-pointer {
+                font-size: 12px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 180px) {
+    header#welcome {
+        h1.main-title {
+            font-size: 20px !important;
+            padding: 0 5px !important;
+        }
+        h2.sub-title {
+            font-size: 16px !important;
+            padding: 0 5px !important;
+        }
+    }
+}
