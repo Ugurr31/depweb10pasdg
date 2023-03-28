@@ -5,7 +5,7 @@
 */
 
 const city_list = [
-    { name: "Türkiye Geneli", population: , lucky: 5304220, ratio: 15 },
+    { name: "Türkiye Geneli", population: 5, lucky: 5304220, ratio: 15 },
     { name: "Adana", population: , lucky: 163817, ratio: 13 },
     { name: "Adıyaman", population: 632459, lucky: 17073, ratio: 37 },
     { name: "Afyonkarahisar", population: 736912, lucky: 16362, ratio: 45 },
